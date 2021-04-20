@@ -205,5 +205,20 @@ namespace MultiOpenCmd
         {
             BuildCmdWindow();
         }
+
+        private void FmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            try
+            {
+                foreach (var process in _cmdList)
+                {
+                    process?.CloseMainWindow();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }

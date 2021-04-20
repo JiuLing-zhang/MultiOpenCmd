@@ -58,7 +58,7 @@ namespace MultiOpenCmd
             this.PanelMain.RowCount = 2;
             this.PanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.PanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PanelMain.Size = new System.Drawing.Size(748, 457);
+            this.PanelMain.Size = new System.Drawing.Size(765, 416);
             this.PanelMain.TabIndex = 0;
             // 
             // toolStrip1
@@ -71,7 +71,7 @@ namespace MultiOpenCmd
             this.btnSplit4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 25);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(748, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(765, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -118,7 +118,7 @@ namespace MultiOpenCmd
             this.toolStripMenuItemSetting});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(748, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(765, 25);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -155,7 +155,7 @@ namespace MultiOpenCmd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(748, 512);
+            this.ClientSize = new System.Drawing.Size(765, 471);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.PanelMain);
@@ -164,6 +164,7 @@ namespace MultiOpenCmd
             this.Name = "FmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "cmd多开工具";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FmMain_FormClosed);
             this.Load += new System.EventHandler(this.FmMain_Load);
             this.Resize += new System.EventHandler(this.FmMain_Resize);
             this.toolStrip1.ResumeLayout(false);
